@@ -35,6 +35,10 @@ const countOnly = function (allItems, itemsToCount) {
 
 // ***What I don't understand: why does this create a place for a counting number beside every name in the list, and can I name it? so when the results are printed, it wouls say "Karl: Count, 1" instead of "Karl: 1"*** If there are Key: Value pairs, where did the Value spot come from, since I never declared it anywhere? When I set the value of results[name] to 1, did that automatically create and update the value?
 
+/* AI Answer 
+As for your question about the key-value pairs in JavaScript objects, you're correct in your understanding. When you do results[name] = 1;, you're creating a new key-value pair in the results object. The key is the value of name and the value is 1. Every time you do results[name]++, you're just updating the value associated with that key.
+*/
+
 // Below is our list of names we can use for allItems
 const firstNames = [
   "Karl",
