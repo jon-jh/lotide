@@ -16,7 +16,7 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log("false");
   }
 };
-// assertArraysEqual([1, 0], [1, 0]);
+assertArraysEqual([1, 0], [1, 0]);
 
 // if (!itemsToRemove.includes(source[i])) {: This is an if statement that checks if the current element in the source array is *not* present in the itemsToRemove array. If the condition is true, it means the element should not be removed, and the code inside the if block will be executed, which adds the element to the filteredArray.
 
