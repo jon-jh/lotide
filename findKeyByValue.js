@@ -1,12 +1,12 @@
 // assertEqual checks that the values in the function are equal.
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
-    console.log(`💔 assertion failed: ${actual} !== ${expected}`);
+    console.log(`assertEqual found:💔 assertion failed; ${actual} !== ${expected}`);
   } else {
-    console.log(`💚 assertion passed: ${actual} === ${expected}`);
+    console.log(`assertEqual found:💚 assertion passed; ${actual} === ${expected}`);
   }
 };
-// assertEqual("Test", "Test"); will show passed
+// assertEqual("test", "test");
 // psuedocode: we want to loop through the object, then when the current index value of the object to a string.
 // to loop through objects, use a for...in loop.
 const findKeyByValue = function(object, inputStr) {

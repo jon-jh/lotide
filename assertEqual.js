@@ -4,12 +4,12 @@
 // assertEqual checks that the values in the function are equal.
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
-    console.log(`💔 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`assertEqual found:💔 assertion failed; ${actual} !== ${expected}`);
   } else {
-    console.log(`💚 Assertion Passed: ${actual} === ${expected}`);
+    console.log(`assertEqual found:💚 assertion passed; ${actual} === ${expected}`);
   }
 };
-assertEqual("Test", "Test");
+// assertEqual("test", "test");
 assertEqual(1, 1);
 assertEqual(1, 2);
 assertEqual("zero", 0);

@@ -1,13 +1,12 @@
-
 // assertEqual checks that the values in the function are equal.
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
-    console.log(`💔 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`assertEqual found:💔 assertion failed; ${actual} !== ${expected}`);
   } else {
-    console.log(`💚 Assertion Passed: ${actual} === ${expected}`);
+    console.log(`assertEqual found:💚 assertion passed; ${actual} === ${expected}`);
   }
 };
-assertEqual("test", "test");
+// assertEqual("test", "test");
 /*
 /
 / Write a function that takes in 2 arrays and returns true if the arrays are equal and false otherwise.
