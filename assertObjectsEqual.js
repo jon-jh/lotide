@@ -27,6 +27,18 @@ const assertObjectsEqual = function(obj1, obj2) {
   }
 };
 
+// eqArrays is added as per AI feedback that without it my eqObjects is only checking primitive vales and not arrays. I need to impliment it into eqObjects though which I have not done.
+
+// const eqArrays = function(arr1, arr2) {
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       console.log("💔eqArrays returned: false: The arrays are not equal.");
+//       return false;
+//     }
+//   }
+//   console.log("💚eqArrays returned: true: The arrays are equal.");
+//   return true;
+// };
 
 
 const thisObj = { color: "red", size: "medium" };
