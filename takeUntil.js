@@ -13,14 +13,8 @@ const takeUntil = function(names, callback) {
 };
 
 const data2 = ["I've", "been", "to", "Hollywood", "Banan", "Watermelon"];
-
 const takeUntilTest1 = takeUntil(data2, "Banan");
-const takeUntilTest2 = takeUntil(data2, "Watermelon");
-const takeUntilTest3 = takeUntil(data2, "to");
-
 console.log(takeUntilTest1);
-console.log(takeUntilTest2);
-console.log(takeUntilTest3);
 
 //
 // Ai Submission Feedback
@@ -37,8 +31,8 @@ const takeUntilAiFeedback = function(array, callback) {
   return newArray;
 };
 
-const data3 = ["I've", "been", "to", "Hollywood", "Banan", "Watermelon"];
+const data3 = ["Something", "I've", "been", "to", "Hollywood", "Banan", "Watermelon"];
 
 // pass a callback function that checks if the item is "Banan"
-const takeUntilTest4 = takeUntil(data2, item => item === "Banan");
+const takeUntilTest4 = takeUntilAiFeedback(data3, item => item === "Banan");
 console.log(takeUntilTest4);
