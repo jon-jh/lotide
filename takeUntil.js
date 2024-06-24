@@ -22,3 +22,23 @@ console.log(takeUntilTest1);
 console.log(takeUntilTest2);
 console.log(takeUntilTest3);
 
+//
+// Ai Submission Feedback
+//
+
+const takeUntilAiFeedback = function(array, callback) {
+  const newArray = [];
+  for (let item of array) {
+    if (callback(item)) { // call the callback with the current item
+      break;
+    }
+    newArray.push(item);
+  }
+  return newArray;
+};
+
+const data3 = ["I've", "been", "to", "Hollywood", "Banan", "Watermelon"];
+
+// pass a callback function that checks if the item is "Banan"
+const takeUntilTest4 = takeUntil(data2, item => item === "Banan");
+console.log(takeUntilTest4);
