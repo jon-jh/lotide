@@ -5,6 +5,7 @@ const eqArrays = require('../eqArrays');
 const assertArraysEqual = require('../assertArraysEqual');
 const middle = require('../middle');
 
+
 //assertEqual
 
 // This is a function that checks if values are equal.
