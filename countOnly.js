@@ -13,4 +13,4 @@ const countOnly = function(allItems, itemsToCount) {
   return results; // Returns the names and their corresponding counts
 };
 
-module.exports = countOnly
+module.exports = countOnly;

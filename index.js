@@ -5,16 +5,16 @@ const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
-// const findKey = require('./findKey');
-// const findKeyByValue = require('./findKeyByValue');
-// const flatten = require('./flatten');
+const findKey = require('./findKey');
+const findKeyByValue = require('./findKeyByValue');
+const flatten = require('./flatten');
 const head = require("./head");
-// const letterPositions = require('./letterPositions');
-// const map = require('./map');
+const letterPositions = require('./letterPositions');
+const map = require('./map');
 const middle = require('./middle');
 const tail = require('./tail');
-//takeUntil
-//without
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 
 console.log(
@@ -26,15 +26,15 @@ console.log(
     countOnly: countOnly,
     eqArrays: eqArrays,
     eqObjects: eqObjects,
-    // findKey: findKey,
-    // findKeyByValue: findKeyByValue,
-    // flatten: flatten,
+    findKey: findKey,
+    findKeyByValue: findKeyByValue,
+    flatten: flatten,
     head: head,
-    // letterPositions: letterPositions,
-    // map: map,
+    letterPositions: letterPositions,
+    map: map,
     middle: middle,
-    tail: tail
-    //takeUntil
-    //without
+    tail: tail,
+    takeUntil: takeUntil,
+    without: without
   }
 );

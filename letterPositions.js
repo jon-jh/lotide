@@ -1,22 +1,3 @@
-// eqArrays returns true if the arrays are equal and false otherwise.
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-// assertArraysEqual has the purpose of returning a string when the arrays match or do not match. Why is this neccessary and why do we not use the original eqArrays for this instead?
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log("Match / Equal");
-  } else {
-    console.log("Not Matching / Not Equal");
-  }
-};
-
 //letterPositions returns the index location of each letter in from the input string (sentence).
 const letterPositions = function(sentence) {
   const results = {};
@@ -34,6 +15,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-//test case:
-const testCase = letterPositions('hello there');
-assertArraysEqual(testCase['h'], [0, 7]);
+module.exports = letterPositions;

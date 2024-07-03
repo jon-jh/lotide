@@ -1,12 +1,4 @@
-/* Creating our own version of .map function to see how it works.
-Our map function will take in two arguments:
-
-An array to map
-A callback function
-  The map function will return a new array based on the results of the callback function.
-*/
-const words = ["ground", "control", "to", "major", "tom"];
-
+//The map function will return a new array based on the results of the callback function.
 const map = function(array, callback) {
   const results = [];
   array.forEach((item, index) => {
@@ -15,12 +7,17 @@ const map = function(array, callback) {
   return results;
 };
 
-const someCallback = function(word) {
-  return word.toUpperCase() + "🚀";
-};
+module.exports = map;
 
-const mappedArray = map(words, someCallback);
+// test case left here because it's complicated
 
-console.log(mappedArray);
+// const words = ["ground", "control", "to", "major", "tom"];
+// const someCallback = function(word) {
+//   return word.toUpperCase() + "🚀";
+// };
+// const mappedArray = map(words, someCallback);
+// console.log(mappedArray);
 
-// my map function used the same code as findWaldo, and the mapped array is converted to all uppercase, plus a spaceship emoji.
+
+
+

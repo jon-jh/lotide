@@ -1,14 +1,3 @@
-// assertEqual checks that the values in the function are equal.
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`💔assertEqual found: false: ${actual} !== ${expected}`);
-  } else {
-    console.log(`💚assertEqual found: true: ${actual} === ${expected}`);
-  }
-};
-// assertEqual("test", "test");
-// psuedocode: we want to loop through the object, then when the current index value of the object to a string.
-// to loop through objects, use a for...in loop.
 const findKeyByValue = function(object, inputStr) {
   let result = ""; //result should be a string
   for (let i in object) {// must use for...in loop for object
@@ -21,14 +10,4 @@ const findKeyByValue = function(object, inputStr) {
   return result;
 };
 
-// test cases
-
-const shows = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire",
-};
-// test cases
-console.log("findKeyByValue returned " + (findKeyByValue(shows, "The Wire")));
-assertEqual(findKeyByValue(shows, "The Wire"), "drama");
-// conslusion: could have used Object.keys... but this worked I think.
+module.exports = findKeyByValue;

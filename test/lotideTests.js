@@ -5,19 +5,19 @@ const countLetters = require('../countLetters');
 const countOnly = require('../countOnly');
 const eqArrays = require('../eqArrays');
 const eqObjects = require('../eqObjects');
-//findKey
-//findKeyByValue
-//flatten
+const findKey = require('../findKey');
+const findKeyByValue = require('../findKeyByValue');
+const flatten = require('../flatten');
 const head = require("../head");
-//letterPositions
-//map
+const letterPositions = require('../letterPositions');
+const map = require('../map');
 const middle = require('../middle');
 const tail = require('../tail');
-//takeUntil
-//without
-//.....
-//.....
-//.....
+const takeUntil = require('../takeUntil');
+const without = require('../without');
+//
+// MANUAL TESTING BEGINS
+//
 // assertEqual
 // This is a function that checks if values are equal.
 assertEqual(1, 1);
@@ -102,5 +102,65 @@ const anotherShirtObject = { size: { L: 1, B: 2 }, color: "red" };
 eqObjects(shirtObject, anotherShirtObject);
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 console.log("\n");
-
-
+//
+// findKey
+//
+console.log("findKey found: " + (findKey(
+  {
+    "Blue Hill": { stars: 1 },
+    Akaleri: { stars: 3 },
+    noma: { stars: 2 },
+    elBulli: { stars: 3 },
+    Ora: { stars: 2 },
+    Akelarre: { stars: 3 },
+  },
+  (myCallback) => myCallback.stars === 2))); // => "noma"
+console.log("\n");
+//
+// findKeyByValue
+//
+const shows = {
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama: "The Wire",
+};
+console.log("findKeyByValue returned " + (findKeyByValue(shows, "The Wire")));
+assertEqual(findKeyByValue(shows, "The Wire"), "drama");
+console.log("\n");
+//
+// flatten
+//
+console.log("Array flattened!");
+console.log(flatten([1, 2, [3, 4], 5, [6]]));
+console.log("\n");
+//
+//letterPositions
+//
+console.log("Letter Positions Says:");
+const testCase = letterPositions('hello there');
+assertArraysEqual(testCase['h'], [0, 7]);
+console.log("\n");
+//
+// map
+//
+console.log("map function says:");
+const words = ["ground", "control", "to", "major", "tom"];
+const someCallback = function(word) {
+  return word.toUpperCase() + "🚀";
+};
+const mappedArray = map(words, someCallback);
+console.log(mappedArray);
+console.log("\n");
+//
+//takeUntil
+//
+console.log("takeUntil says:");
+const data2 = ["I've", "been", "to", "Hollywood", "Banan", "Watermelon"];
+const takeUntilTest1 = takeUntil(data2, "Banan");
+console.log(takeUntilTest1);
+console.log("\n");
+//
+// without
+//
+console.log("without says:");
+console.log(without([3, 4, 5, 6, 7], [3, 4, 5]));
