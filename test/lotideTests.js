@@ -28,12 +28,14 @@ console.log("\n");
 // head
 //
 // head returns the first item in the array.
+console.log("head found");
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head(["Hey", "Test"]), "Hey");
 console.log("\n");
 //
 // tail
 //
+console.log("tail found");
 const sampleArr = ["1", "2", "3", "4"];
 console.log(tail(sampleArr));
 // The following is a check to make sure the original array hasn't changed
@@ -42,18 +44,21 @@ console.log("\n");
 //
 // eqArrays
 //
+console.log("eqArrays found");
 assertEqual(eqArrays([1, 2], [1, 2]), true);
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
 console.log("\n");
 //
 // assertArraysEqual
 //
+console.log("assertEqArrays found");
 assertArraysEqual([1, 0], [1, 10]);
 assertArraysEqual([1, 10], [1, 10]);
 console.log("\n");
 //
 // middle
 //
+console.log("middle found");
 console.log(middle([1, 2, 3]));
 console.log(middle([1, 2, 3, 4]));
 
@@ -63,6 +68,7 @@ console.log("\n");
 //
 // assertObjectsEqual
 //
+console.log("assertObjectsEqual found");
 const thisObj = { color: "red", size: "medium" };
 const thatObj = { size: "medium", color: "red" };
 assertObjectsEqual(thisObj, thatObj);
@@ -70,6 +76,7 @@ console.log("\n");
 //
 // countLetters
 //
+console.log("countLetters found");
 countLetters('hello there');
 countLetters('LHL');
 console.log("\n");
@@ -97,6 +104,7 @@ assertEqual(result1["Jason"], 1);
 //
 // eqObjects
 //
+console.log("eqObjects found");
 const shirtObject = { color: "red", size: { L: 1, B: 2 } };
 const anotherShirtObject = { size: { L: 1, B: 2 }, color: "red" };
 eqObjects(shirtObject, anotherShirtObject);
@@ -124,7 +132,7 @@ const shows = {
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire",
 };
-console.log("findKeyByValue returned " + (findKeyByValue(shows, "The Wire")));
+console.log("findKeyByValue found " + (findKeyByValue(shows, "The Wire")));
 assertEqual(findKeyByValue(shows, "The Wire"), "drama");
 console.log("\n");
 //
@@ -136,14 +144,14 @@ console.log("\n");
 //
 //letterPositions
 //
-console.log("Letter Positions Says:");
+console.log("letter positions found");
 const testCase = letterPositions('hello there');
 assertArraysEqual(testCase['h'], [0, 7]);
 console.log("\n");
 //
 // map
 //
-console.log("map function says:");
+console.log("map found");
 const words = ["ground", "control", "to", "major", "tom"];
 const someCallback = function(word) {
   return word.toUpperCase() + "🚀";
@@ -154,7 +162,7 @@ console.log("\n");
 //
 //takeUntil
 //
-console.log("takeUntil says:");
+console.log("takeUntil found");
 const data2 = ["I've", "been", "to", "Hollywood", "Banan", "Watermelon"];
 const takeUntilTest1 = takeUntil(data2, "Banan");
 console.log(takeUntilTest1);
@@ -162,5 +170,5 @@ console.log("\n");
 //
 // without
 //
-console.log("without says:");
+console.log("without found");
 console.log(without([3, 4, 5, 6, 7], [3, 4, 5]));
