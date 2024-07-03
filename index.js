@@ -16,22 +16,23 @@ const tail = require('./tail');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
+// When a object property value is the same as it's name, you can remove it.
 module.exports = {
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  head: head,
-  letterPositions: letterPositions,
-  map: map,
-  middle: middle,
-  tail: tail,
-  takeUntil: takeUntil,
-  without: without
+  assertArraysEqual, //: assertArraysEqual,
+  assertEqual, //: assertEqual,
+  assertObjectsEqual, //: assertObjectsEqual,
+  countLetters, //: countLetters,
+  countOnly, //: countOnly,
+  eqArrays, //: eqArrays,
+  eqObjects, //: eqObjects,
+  findKey, //: findKey,
+  findKeyByValue, //: findKeyByValue,
+  flatten, //: flatten,
+  head, //: head,
+  letterPositions, //: letterPositions,
+  map, //: map,
+  middle, //: middle,
+  tail, //: tail,
+  takeUntil, //: takeUntil,
+  without, //: without
 };
