@@ -13,8 +13,11 @@ const head = require("../head");
 //map
 const middle = require('../middle');
 const tail = require('../tail');
-//
-// Manual Tests
+//takeUntil
+//without
+//.....
+//.....
+//.....
 // assertEqual
 // This is a function that checks if values are equal.
 assertEqual(1, 1);

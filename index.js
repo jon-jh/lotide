@@ -13,6 +13,8 @@ const head = require("./head");
 // const map = require('./map');
 const middle = require('./middle');
 const tail = require('./tail');
+//takeUntil
+//without
 
 
 console.log(
@@ -32,5 +34,7 @@ console.log(
     // map: map,
     middle: middle,
     tail: tail
+    //takeUntil
+    //without
   }
 );
