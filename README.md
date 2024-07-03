@@ -1,1 +1,1 @@
-hi
+Every function in this library is currently tested within test > lotideTests, while a few are tested in test > chaiTests.
