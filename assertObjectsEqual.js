@@ -4,8 +4,10 @@ const eqObjects = require('./eqObjects');
 const assertObjectsEqual = function(obj1, obj2) {
   const inspect = require("util").inspect;
   if (eqObjects(obj1, obj2)) {
+    console.log("assertObjEq asserted 🟢 the objects are equal");
     return true;
   } else {
+    console.log("assertObjEq asserted ⛔ the objects are not equal");
     return false;
   }
 };
