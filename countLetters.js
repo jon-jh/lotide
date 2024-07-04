@@ -10,7 +10,7 @@ const countLetters = function(lettersToCount) {
       }
     }
   }
-  console.log(results); //print the results object to visually check what is happening, since "return" doesnt "print" anything.
+  // console.log(results); //print the results object to visually check what is happening, since "return" doesnt "print" anything.
   return results;
 };
 

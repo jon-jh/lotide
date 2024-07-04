@@ -15,7 +15,6 @@ const middle = require('../middle');
 const tail = require('../tail');
 const takeUntil = require('../takeUntil');
 const without = require('../without');
-//
 // MANUAL TESTING BEGINS
 //
 // assertEqual
@@ -77,7 +76,7 @@ console.log("\n");
 // countLetters
 //
 console.log("countLetters found");
-countLetters('hello there');
+(console.log(countLetters('hello there')));
 countLetters('LHL');
 console.log("\n");
 //
