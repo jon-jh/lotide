@@ -1,7 +1,7 @@
 {
   "name": "@npmjon/lotide",
-  "version": "1.0.0",
-  "description": "made for a js class",
+  "version": "1.0.1",
+  "description": "cleaned up test files",
   "main": "index.js",
   "directories": {
     "test": "test"
